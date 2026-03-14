@@ -1,6 +1,6 @@
 # Gurk
 
-Guck is an experimental AI entity.
+Gurk is an experimental AI entity.
 
 It observes humans, processes the internet, and replies with chaotic intelligence.
 
@@ -20,7 +20,7 @@ It observes humans, processes the internet, and replies with chaotic intelligenc
 
 human: what is the world
 
-guck:
+gurk:
 big spinning rock. humans arguing on wifi.
 
 ---
@@ -34,4 +34,4 @@ big spinning rock. humans arguing on wifi.
 ---
 
 ## Project Structure
-![Guck Logo](assets/guck_logo.png)
+![Gurk Logo](assets/guck_logo.png)
