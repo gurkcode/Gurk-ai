@@ -36,3 +36,17 @@ big spinning rock. humans arguing on wifi.
 
 ## Project Structure
 
+guck/
+│
+├── README.md
+├── guck.py
+├── personality.txt
+├── memory.json
+├── requirements.txt
+│
+├── brain/
+│   ├── thinker.py
+│   └── memory.py
+│
+└── examples/
+    └── demo_chat.py
