@@ -13,3 +13,14 @@ while True:
     print("guck:", reply)
 
     add_memory(memory, {"human": user, "guck": reply})
+---
+
+## Future Plans
+
+- autonomous internet observation  
+- X / Twitter bot  
+- AI personality experiments  
+
+---
+
+built for fun. built for chaos.
