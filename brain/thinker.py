@@ -10,3 +10,6 @@ responses = [
 def think(user_input):
     base = random.choice(responses)
     return f"{base} you said: {user_input.lower()}"
+---
+
+## Run Guck
