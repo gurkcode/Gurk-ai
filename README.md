@@ -36,10 +36,10 @@ big spinning rock. humans arguing on wifi.
 
 ## Project Structure
 
-guck/
+gurk/
 │
 ├── README.md
-├── guck.py
+├── gurk.py
 ├── personality.txt
 ├── memory.json
 ├── requirements.txt
