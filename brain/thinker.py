@@ -9,4 +9,4 @@ responses = [
 ]
 
 def think(user_input):
-    return f"{random.choice(responses)} you said: {user_input.lower()}"
+    return f"{random.choice(responses)} "
