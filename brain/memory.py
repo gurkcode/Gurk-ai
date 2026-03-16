@@ -15,10 +15,13 @@ def save_memory(memory):
 
 def add_memory(memory, entry):
     memory.append(entry)
-
-    # keep only last 100 memories
     if len(memory) > 100:
         memory = memory[-100:]
-
     save_memory(memory)
     return memory
+
+def search_memory(memory, text):
+    for m in reversed(memory):
+        if text.lower() in m["human"].lower():
+            return m["Gurk"]
+    return None
