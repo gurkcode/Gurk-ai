@@ -35,3 +35,31 @@ def think(user_input, memory):
 
     # Default personality response
     return random.choice(personality)
+def think(memory, human_text):
+    # Step 1: Internet search if requested
+    if "search" in human_text.lower():
+        query = human_text.lower().replace("search", "").strip()
+        return search_web(query)
+
+    # Step 2: Check memory
+    remembered = search_memory(memory, human_text)
+    if remembered:
+        return f"(From memory) {remembered}"
+
+    # Step 3: Try math/logic
+    try:
+        expr = human_text.replace("×", "*").replace("÷", "/")
+        result = eval(expr)
+        return f"I crunched the numbers: {result}"
+    except:
+        pass
+
+    # Step 4: Reasoning + personality
+    reasoning = f"Let me think… about '{human_text}'. Humans are weird, but interesting."
+    jokes = [
+        "Also, that reminds me of a funny story… not that I can tell it 😏",
+        "You might want to read more about this online.",
+        "I’d explain, but it’s complicated… like humans."
+    ]
+    import random
+    return f"{reasoning} {random.choice(jokes)}"
